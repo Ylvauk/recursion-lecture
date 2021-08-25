@@ -32,8 +32,8 @@ ___
 
 * Clone down the starter code, cd into project, and install dependencies: 
 ```
-    $ git clone //link to repo
-    $ cd recursion/
+    $ git clone https://git.generalassemb.ly/SEIR-809/recursion-lecture.git
+    $ cd recursion-lecture/
     $ npm i
 ```
 
