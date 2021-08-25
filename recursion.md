@@ -24,7 +24,6 @@
 * Recursion visualization
 * Memoization with recursion
 * The good and the bad of recursion
-* Go over the solutions to the exercises
 
 ___
 
