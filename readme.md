@@ -203,6 +203,9 @@ ___
 
 <br> 
 
+Here is another website for visualizing the recursion process: https://recursion.vercel.app/
+And here is a recursion visualization tool for Python: https://www.recursionvisualizer.com/
+
 ## Memoization 
 
 One of the downfalls of recursion is the space complexity of it's operations. When we add a function call to the call stack, it is not allowed to leave until the final function call is resolved and unwound back to itself. 
