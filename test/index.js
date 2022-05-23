@@ -45,20 +45,3 @@ describe('coinFlips', ()=>{
         expect(results.length).to.equal(16);
     });
 })
-
-describe('letterCombinations', ()=>{
-    it("should return an array", ()=>{
-        expect(Array.isArray(letterCombinations(["a","b","c"]))).to.equal(true);
-    });
-    it("should include single letter results", ()=>{
-        expect(letterCombinations(["a","b","c"]).includes("b")).to.equal(true);
-    });
-    it("should include combinations in different order", ()=>{
-        expect(letterCombinations(["a","b","c"]).includes("ba")).to.equal(true);
-        expect(letterCombinations(["a","b","c"]).includes("ab")).to.equal(true);
-    });
-    it("should include full-length combinations", ()=>{
-        expect(letterCombinations(["a","b","c"]).includes("bac")).to.equal(true);
-        expect(letterCombinations(["a","b","c"]).includes("cab")).to.equal(true);
-    });
-})
