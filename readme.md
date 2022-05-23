@@ -130,9 +130,13 @@ Let's write a classic recursive function and visualize it on the call stack!
 
 function factorial(n){
     if (n <= 0) return 1;
+    console.log(`Will return ${n} * factorial(${n - 1})`)
     return n * factorial(n-1);
 }
+
 ```
+
+Let's visualize what happens when we run this program using this awesome call stack visualization program: https://www.jsv9000.app/
 
 When we invoke factorial with 4, the function call of ``factorial(4)`` is first placed on the call stack, and JS tries to figure out what that is, so the stack at this point looks like:
 
@@ -232,11 +236,11 @@ Let's edit our ``fib`` function to take advantage of memoization
 ```js
 
 let memo = {};
-function fib(n) {
+function fibMemo(n) {
     if (n <= 1) return n;
     if (memo[n]) return memo[n];
     console.log(`I have to add ${n} to the stack`);
-    let result = fib(n - 1) + fib(n - 2);
+    let result = fibMemo(n - 1) + fibMemo(n - 2);
     memo[n] = result;
     return result;
 }
