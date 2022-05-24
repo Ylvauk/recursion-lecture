@@ -48,10 +48,7 @@ ___
 
 
 ## Defining Recursion
-
 <br>
-
-
 
 ![Recursion Meme](https://imgur.com/EqkvkCu.gif)
 
