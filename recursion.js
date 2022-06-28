@@ -5,14 +5,15 @@
 
 function factorial(n){
     // This function returns the factorial of a given number.
+    if (n==1){ return 1}else{return n * factorial(n-1)}
 }
 
-function fibonacci(){
+function fibonacci(n){
     // This function returns the Nth number in the fibonacci sequence.
     // https://en.wikipedia.org/wiki/Fibonacci_number
     // For this function, the first two fibonacci numbers are 1 and 1
+    
 }
-
 function isPalindrome() {
     // This function returns True if the provided string is a palindrome and returns false if it is not.
 }
@@ -27,10 +28,9 @@ function changeXY() {
 }
 
 
-function findMax(){
-    // This function returns the largest number in a given array.
+function findMax(array){
+  
 }
-
 
 // coinFlips is a hungry for more challenging recursion problem! Not required as part of the deliverable.
 function coinFlips(){
