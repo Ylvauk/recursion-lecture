@@ -8,38 +8,40 @@ function factorial(n){
     if (n==1){ return 1}else{return n * factorial(n-1)}
 }
 
-function fibonacci(n){
-    // This function returns the Nth number in the fibonacci sequence.
-    // https://en.wikipedia.org/wiki/Fibonacci_number
-    // For this function, the first two fibonacci numbers are 1 and 1
+function fibonacci(i){
+    if (i <= 1) 
+    return i;
+    return fibonacci(i-1)+fibonacci(i-2);
     
 }
-function isPalindrome() {
-    // This function returns True if the provided string is a palindrome and returns false if it is not.
+function isPalindrome(string) {
+    const stringArray = string.split("");
+    if (stringArray.length == 1) return true;
+    if(stringArray.pop() == stringArray.shift()){
+    return pal(stringArray.join(""))}else{return false;
+  }
 }
-        
 
-function changeXY() {
-    // This function is given a string and returns a new string where all the lowercase 'x' chars have been changed to 'y' chars. No loops!
-    // For example
-    // changeXY("codex") → "codey"
-    // changeXY("xxhixx") → "yyhiyy"
-    // changeXY("xhixhix") → "yhiyhiy"
+function changeXY(str) {
+    const arr = str.split("");
+    if(arr.indexOf('x')<0) return str
+    arr[arr.indexOf("x")] = "y";
+    return changeXY(arr.join(""));
 }
 
 
 function findMax(array){
-  
+    if(array.length<=1) {
+        return array[0]
+      }
+      if(array[0]>array[1])array.splice(1,1)
+      if(array[0]<array[1])array.splice(0,1)
+      return findMax(array)
 }
 
 // coinFlips is a hungry for more challenging recursion problem! Not required as part of the deliverable.
 function coinFlips(){
-    // This function returns an array of all possible outcomes from flipping a coin N times.
-    // Input type: Integer
-    // For example, coinFlips(2) would return the following:
-    // ["HH", "HT", "TH", "TT"]
-    // H stands for Heads and T stands for tails
-    // Represent the two outcomes of each flip as "H" or "T"
+//could not figure this one out
 }
 
 
